@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<!--När sidan laddas körs en funktion med en alert-->
+<body onload ="emptyQueue()">
+ 
+ <!--Skapar sidans rubrik-->
+ <h1>Arlanda luggage Check-in System</h1>
+   
+  <!--Skapar textboxen för inmatning av namn -->
+  <!--Varje element som jag vill använda i scriptfilen får
+  ett id som senare ska kunna sparas i variabler-->
+  <textarea type="text" id="textBox" placeholder="Please write your name"></textarea>
+  
+  <!--Sätter dem existerande knapparna i en sepparat div-->
+  <!--Dessa knappar ska ha samma style i css-->
+  <div id="buttons">
+    <button type="button" id="add">Add to queue</button>
+    <button type="button" id="checkIn">Check-in</button>
+  </div>
+ 
+ <!--Skapar en tom ordered list som sedan ska fyllas med inputs-->
+ <ol id="list">
+ </ol>
+
+ <script src="main.js"></script>
+
+</body>
+</html>
